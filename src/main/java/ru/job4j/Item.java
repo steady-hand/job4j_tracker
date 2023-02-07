@@ -1,12 +1,16 @@
 package ru.job4j;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class Item {
     private int id;
     private String name;
 
     private LocalDateTime created;
+
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
 
     public Item() {
     }
@@ -47,6 +51,5 @@ public class Item {
         LocalDateTime currentDateTime = LocalDateTime.now();
         System.out.println("Текущая дата: " + currentDateTime);
     }
-
 
 }
