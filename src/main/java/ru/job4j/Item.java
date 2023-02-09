@@ -17,12 +17,9 @@ public class Item {
 
     public Item(String name) {
         this.name = name;
+        this.created = LocalDateTime.now();
     }
 
-    public Item(String name, int id) {
-        this.name = name;
-        this.id = id;
-    }
     public void setCreated(LocalDateTime created) {
         this.created = created;
     }
@@ -44,12 +41,14 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
-    public static void main(String[] args) {
-        Item item1 = new Item();
-        Item item2 = new Item("Антон Гастон");
-        Item item3 = new Item("Антон Гастон", 123);
-        LocalDateTime currentDateTime = LocalDateTime.now();
-        System.out.println("Текущая дата: " + currentDateTime);
-    }
 
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", created=" + created.format(FORMATTER) +
+                '}';
+    }
 }
