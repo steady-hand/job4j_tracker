@@ -35,9 +35,4 @@ public class ConvertList2ArrayTest {
         };
         assertThat(result).isEqualTo(expect);
     }
-
-    @Test
-    public void test() {
-        assertTrue(true);
-    }
 }
