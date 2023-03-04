@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class ConvertList2ArrayTest {
     @Test
@@ -33,5 +34,10 @@ public class ConvertList2ArrayTest {
                 {5, 0}
         };
         assertThat(result).isEqualTo(expect);
+    }
+
+    @Test
+    public void test() {
+        assertTrue(true);
     }
 }
