@@ -94,23 +94,23 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
                         + "=== Edit item ===" + ln
                         + "Заявка изменена успешно." + ln
                         + "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
         );
     }
     @Test
@@ -126,23 +126,23 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
                         + "=== Show all items ===" + ln
                         + "Хранилище еще не содержит заявок" + ln
                         + "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
         );
     }
     @Test
@@ -158,23 +158,23 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
                         + "=== Find items by name ===" + ln
                         + "Заявка с введенным name: Vot не найдена." + ln
                         + "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
         );
     }
     @Test
@@ -190,23 +190,23 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
                         + "=== Find item by id ===" + ln
                         + "Заявка с введенным id: 1 не найдена." + ln
                         + "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
         );
     }
     @Test
@@ -221,22 +221,22 @@ public class StartUITest {
         String ln = System.lineSeparator();
         assertThat(out.toString()).isEqualTo(
                 "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
                         + "Wrong input, you can select: 0 .. 0" + ln
                         + "Menu:" + ln
-                        + "0. Add new Item" + ln
-                        + "1. Show all items" + ln
-                        + "2. Edit item" + ln
-                        + "3. Delete item" + ln
-                        + "4. Find item by id" + ln
-                        + "5. Find items by name" + ln
-                        + "6. Exit Program" + ln
+                        + "1. Add new Item" + ln
+                        + "2. Show all items" + ln
+                        + "3. Edit item" + ln
+                        + "4. Delete item" + ln
+                        + "5. Find item by id" + ln
+                        + "6. Find items by name" + ln
+                        + "7. Exit Program" + ln
         );
     }
 }

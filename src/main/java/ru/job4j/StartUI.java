@@ -28,15 +28,15 @@ public class StartUI {
         }
 
     private void showMenu() {
-        List<String> menu = List.of("1. Add new Item\n", "2. Show all items\n", "3. Edit item\n",
-                "4. Delete item\n", "5. Find item by id\n", "6. Find items by name\n",
-                "Exit Program");
-        out.println("Menu:");//????????????????????
+        List<String> menu = List.of("1. Add new Item", "2. Show all items", "3. Edit item",
+                "4. Delete item", "5. Find item by id", "6. Find items by name",
+                "7. Exit Program");
+        out.println("Menu:");
         for (String check : menu) {
-            out.println(menu);
+            out.println(check);
         }
     }
-
+//        List<String> menu = List.of("1. Add new Item \n2. Show all items \n3. Edit item \n4. Delete item \n5. Find item by id \n6. Find items by name \n7. Exit Program");
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
