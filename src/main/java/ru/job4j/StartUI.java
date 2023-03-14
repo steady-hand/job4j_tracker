@@ -36,7 +36,6 @@ public class StartUI {
             out.println(check);
         }
     }
-//        List<String> menu = List.of("1. Add new Item \n2. Show all items \n3. Edit item \n4. Delete item \n5. Find item by id \n6. Find items by name \n7. Exit Program");
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
