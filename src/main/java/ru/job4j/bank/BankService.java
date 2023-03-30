@@ -80,6 +80,7 @@ public class BankService {
      * по извлеченному пользователю возвращается коллекция с account
      * @return возвращает аккаунт с реквизитами идентичными введенным
      */
+
     public Account findByRequisite(String passport, String requisite) {
         if (users.get(findByPassport(passport)) != null) {
             for (Account account : users.get(findByPassport(passport))) {
@@ -100,6 +101,7 @@ public class BankService {
      * @param amount сумма перевода
      * @return возвращает осуществлен перевож или нет
      */
+
     public boolean transferMoney(String srcPassport, String srcRequisite,
                                  String destPassport, String destRequisite, double amount) {
         boolean rsl = true;
