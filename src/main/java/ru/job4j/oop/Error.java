@@ -17,6 +17,7 @@ public class Error {
         System.out.println("Второй параметр: " + status);
         System.out.println("Третий параметр: " + message);
     }
+
     public Error() {
     }
 

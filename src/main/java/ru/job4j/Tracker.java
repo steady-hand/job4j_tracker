@@ -8,7 +8,6 @@ public class Tracker {
     private List<Item> items = new ArrayList<Item>();
     private int ids = 1;
 
-
     public Item add(Item item) {
         item.setId(ids++);
         items.add(item);
@@ -26,6 +25,7 @@ public class Tracker {
         }
         return rsl;
     }
+
     public boolean delete(int id) {
         int index = indexOf(id);
         boolean rsl = index != -1;

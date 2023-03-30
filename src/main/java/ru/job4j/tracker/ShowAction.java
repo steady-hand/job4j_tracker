@@ -5,12 +5,13 @@ import ru.job4j.Tracker;
 
 import java.util.List;
 
-public class ShowAction implements UserAction{
+public class ShowAction implements UserAction {
     private final Output out;
 
     public ShowAction(Output out) {
         this.out = out;
     }
+
     @Override
     public String name() {
         return "Show all items";

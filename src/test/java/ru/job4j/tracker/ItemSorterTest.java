@@ -20,6 +20,7 @@ class ItemSorterTest {
         List<Item> expected = Arrays.asList(artem, bogdan, vlad);
         Assertions.assertArrayEquals(items.toArray(), expected.toArray());
     }
+
     @Test
     public void itemDescByName() {
         Item bogdan = new Item("bogdan");

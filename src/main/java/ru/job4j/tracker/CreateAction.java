@@ -3,12 +3,13 @@ package ru.job4j.tracker;
 import ru.job4j.Item;
 import ru.job4j.Tracker;
 
-public class CreateAction implements UserAction{
+public class CreateAction implements UserAction {
     private final Output out;
 
     public CreateAction(Output out) {
         this.out = out;
     }
+
     @Override
     public String name() {
         return "Add new Item";

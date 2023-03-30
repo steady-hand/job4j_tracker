@@ -3,6 +3,7 @@ package ru.job4j.pojo;
 public class Book {
     private String name;
     private int amound;
+
     public Book(String name, int amound) {
         this.name = name;
         this.amound = amound;

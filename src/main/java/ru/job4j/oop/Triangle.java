@@ -21,8 +21,7 @@ public class Triangle {
         boolean rsl;
         if (ab + ac > bc && ac + bc > ab && ab + bc > ac) {
             rsl = true;
-        }
-        else {
+        } else {
             rsl = false;
         }
         return rsl;

@@ -5,12 +5,13 @@ import ru.job4j.Tracker;
 
 import java.util.List;
 
-public class FindNameAction implements UserAction{
+public class FindNameAction implements UserAction {
     private final Output out;
 
     public FindNameAction(Output out) {
         this.out = out;
     }
+
     @Override
     public String name() {
         return "Find item by name";

@@ -12,7 +12,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatNullPointerException;
 import static org.junit.Assert.assertNull;
 
-
 public class StartUITest {
     @Test
     public void whenCreateItem() {
@@ -26,7 +25,6 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(tracker.findAll().get(0).getName()).isEqualTo("Item name");
     }
-
 
     @Test
     public void whenReplaceItem() {
@@ -43,7 +41,6 @@ public class StartUITest {
         assertThat(tracker.findById(item.getId()).getName()).isEqualTo(replacedName);
     }
 
-
     @Test
     public void whenDeleteItem() {
         Output out = new StubOutput();
@@ -59,6 +56,7 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         assertThat(tracker.findById(item.getId())).isNull();
     }
+
     @Test
     public void whenExit() {
         Output out = new StubOutput();
@@ -79,6 +77,7 @@ public class StartUITest {
                         + "7. Exit Program" + System.lineSeparator()
         );
     }
+
     @Test
     public void whenReplaceItemTestOutputIsSuccessfully() {
         Output out = new StubOutput();
@@ -113,6 +112,7 @@ public class StartUITest {
                         + "7. Exit Program" + ln
         );
     }
+
     @Test
     public void whenshowAllItems() {
         Output out = new StubOutput();
@@ -145,6 +145,7 @@ public class StartUITest {
                         + "7. Exit Program" + ln
         );
     }
+
     @Test
     public void whenFindByName() {
         Output out = new StubOutput();
@@ -177,6 +178,7 @@ public class StartUITest {
                         + "7. Exit Program" + ln
         );
     }
+
     @Test
     public void whenFindById() {
         Output out = new StubOutput();
@@ -209,6 +211,7 @@ public class StartUITest {
                         + "7. Exit Program" + ln
         );
     }
+
     @Test
     public void whenInvalidExit() {
         Output out = new StubOutput();

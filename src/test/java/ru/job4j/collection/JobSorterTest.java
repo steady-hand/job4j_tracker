@@ -8,7 +8,6 @@ import java.util.Comparator;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 class JobSorterTest {
     @Test
     public void jobAscByName() {
@@ -20,6 +19,7 @@ class JobSorterTest {
         List<Job> expected = Arrays.asList(job3, job1, job2);
         Assertions.assertArrayEquals(jobs.toArray(), expected.toArray());
     }
+
     @Test
     public void jobAscByPriority() {
         Job job1 = new Job("Cooking", 5);
@@ -30,6 +30,7 @@ class JobSorterTest {
         List<Job> expected = Arrays.asList(job3, job2, job1);
         Assertions.assertArrayEquals(jobs.toArray(), expected.toArray());
     }
+
     @Test
     public void whenCompatorByNameAndPrority() {
         Comparator<Job> cmpNamePriority = new JobDescByName().thenComparing(new JobDescByPriority());

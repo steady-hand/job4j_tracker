@@ -55,6 +55,7 @@ public class TrackerTest {
             List<Item> result = tracker.findByName(second.getName());
             assertThat(result.get(1).getName()).isEqualTo(second.getName());
         }
+
     @Test
     public void whenReplaceItemIsSuccessful() {
         Tracker tracker = new Tracker();
@@ -76,6 +77,7 @@ public class TrackerTest {
         assertThat(tracker.findById(item.getId()).getName()).isEqualTo("Bug");
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenDeleteItemIsSuccessful() {
         Tracker tracker = new Tracker();

@@ -13,7 +13,7 @@ public class StartUI {
         this.out = out;
     }
 
-        public void init(Input input, Tracker tracker, List<UserAction> actions){
+        public void init(Input input, Tracker tracker, List<UserAction> actions) {
             boolean run = true;
             while (run) {
                 showMenu();
@@ -36,6 +36,7 @@ public class StartUI {
             out.println(check);
         }
     }
+
     public static void main(String[] args) {
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());

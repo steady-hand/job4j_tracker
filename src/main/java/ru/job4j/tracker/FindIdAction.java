@@ -3,12 +3,13 @@ package ru.job4j.tracker;
 import ru.job4j.Item;
 import ru.job4j.Tracker;
 
-public class FindIdAction implements UserAction{
+public class FindIdAction implements UserAction {
     private final Output out;
 
     public FindIdAction(Output out) {
         this.out = out;
     }
+
     @Override
     public String name() {
         return "Find item by id";
