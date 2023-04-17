@@ -65,12 +65,17 @@ public class BankService {
      * @return возвращает User с passport идентичным введенному идентификатору
      */
     public User findByPassport(String passport) {
-        for (User user : users.keySet()) {
+        /*for (User user : users.keySet()) {
             if (user.getPassport().equals(passport)) {
                 return user;
             }
         }
-        return null;
+        return null;*/
+        return users.keySet()
+                .stream()
+                .filter(u -> u.getPassport().equals(passport))
+                .findFirst()
+                .orElse(null);
     }
     /**
      *
@@ -82,19 +87,24 @@ public class BankService {
      */
 
     public Account findByRequisite(String passport, String requisite) {
-        if (users.get(findByPassport(passport)) != null) {
+        /*if (users.get(findByPassport(passport)) != null) {
             for (Account account : users.get(findByPassport(passport))) {
                 if (account.getRequisite().equals(requisite)) {
                     return account;
                 }
             }
         }
-        return null;
+        return null;*/
+        return users.get(findByPassport(passport))
+                .stream()
+                .filter(a -> a.getRequisite().equals(requisite))
+                .findFirst()
+                .orElse(null);
     }
     /**
      * Метод принимает пасспорт и реквизиты получателя и отправителя
      * Нахоодит из аккаунты и переводит сумму amount получателю, снимая со счета отправителя
-     * @param srcPassport пасспорт отправителя
+     * @param srcPassport паспорт отправителя
      * @param srcRequisite счет отправителя
      * @param destPassport пасспорт получателя
      * @param destRequisite счет получателя
